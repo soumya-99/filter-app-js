@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.img-container{
+    margin-top: 50px;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.file-upload-section {
+    margin: auto;
+    margin-top: 5%;
+    font-weight: bold;
+    width: 50%;
+    padding:  8px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    background: rgb(224, 165, 37);
+    cursor: pointer;
+}
+
+#foto-file{
+    display: none;
+}

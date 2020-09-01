@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor Foto</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/foto.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <div class="file-upload-section" onclick="selectImage()">
+        <input id="foto-file" type="file">
+        Select Image
+    </div>
+
+    <div class="img-container">
+        <img id="foto-image" class="image">
+    </div>
+
+    <div class="buttons-section" style="text-align: center; margin-top: 20px;">
+        <tr>
+            <td><button class="operation-btn" onclick="makeGrayScale()">GrayScale</button></td>
+            <td><button class="operation-btn" onclick="makeBright()">Brightness</button></td>
+            <td><button class="operation-btn" onclick="makeDark()">Darker</button></td>
+        </tr>
+        <tr>
+            <td><button class="operation-btn" onclick="makeBlur()">Blur</button></td>
+            <td><button class="operation-btn" onclick="makeEmboss()">Emboss</button></td>
+            <td><button class="operation-btn" onclick="makeSharp()">Sharp</button></td>
+        </tr>
+        <tr aria-colspan="3">
+            <td><button class="operation-btn download-btn" onclick="download()">Download</button></td>
+        </tr>
+    </div>
+</body>
+
+</html>
